@@ -7,7 +7,7 @@
       ,"id": "100000"
       ,"status": "online"
       ,"sign": "在深邃的编码世界，做一枚轻盈的纸飞机"
-      ,"avatar": "/admin/pro/dist/style/res/fly/avatar/00.jpg"
+      ,"avatar": "//res.layui.com/images/fly/avatar/00.jpg"
     }
     ,"friend": [{
       "groupname": "知名人物"
@@ -74,7 +74,7 @@
       ,"list": [{
         "username": "王祖贤"
         ,"id": "76543"
-        ,"avatar": "//n.sinaimg.cn/sinacn10010/200/w1080h720/20190315/cc9e-hufnxfn6555617.jpg"
+        ,"avatar": "//wx2.sinaimg.cn/mw690/5db11ff4gy1flxmew7edlj203d03wt8n.jpg"
         ,"sign": "我爱贤心"
       },{
         "username": "佟丽娅"

@@ -28,14 +28,7 @@
         <div class="layui-card">
           <div class="layui-card-header">开启单选框</div>
           <div class="layui-card-body">
-            <table class="layui-hide" id="test-table-radio" lay-filter="test-table-radio"></table>
-            
-            <script type="text/html" id="test-table-radio-toolbarDemo">
-              <div class="layui-btn-container">
-                <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
-              </div>
-            </script>
-
+            <table class="layui-hide" id="test-table-checkbox"></table>
           </div>
         </div>
       </div>
@@ -49,13 +42,11 @@
   }).extend({
     index: 'lib/index' //主入口模块
   }).use(['index', 'table'], function(){
-    var admin = layui.admin
-    ,table = layui.table;
+    var table = layui.table;
   
     table.render({
-      elem: '#test-table-radio'
-      ,url: layui.setter.base + '/json/table/user.js'
-      ,toolbar: '#test-table-radio-toolbarDemo'
+      elem: '#test-table-checkbox'
+      ,url: layui.setter.base + 'json/table/user.js'
       ,cols: [[
         {type:'radio'}
         ,{field:'id', width:80, title: 'ID', sort: true}
@@ -70,20 +61,8 @@
       ]]
       ,page: true
     });
-    
-    //头工具栏事件
-    table.on('toolbar(test-table-radio)', function(obj){
-      var checkStatus = table.checkStatus(obj.config.id); //获取选中行状态
-      switch(obj.event){
-        case 'getCheckData':
-          var data = checkStatus.data;  //获取选中行数据
-          layer.alert(JSON.stringify(data));
-        break;
-      };
-    });
   
   });
   </script>
-  
 </body>
 </html>

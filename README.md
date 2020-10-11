@@ -1,7 +1,9 @@
-# layuiAdmin 后台管理模板
+# layuiAdmin 后台管理模板 v1.4.0
+
 > 完全由 layui 自建的一套前端架构实现而成的通用型后台管理模板系统
 
 ## [iframe版](https://www.layui.com/admin/pro/)
+
 ### `使用简单`
 > * 基于 iframe 标签页实现，简单实用
 > * 传统开发模式，撸起袖子直接开干
